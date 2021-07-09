@@ -1,0 +1,32 @@
+com/demoqa/automation/interactions/SelectOpcCityState.java
+ com.demoqa.automation.interactions.SelectOpcCityState
+com/demoqa/automation/utils/CompletePracticeForm.java
+ com.demoqa.automation.utils.CompletePracticeForm
+com/demoqa/automation/interactions/OpenTheBrowser.java
+ com.demoqa.automation.interactions.OpenTheBrowser
+com/demoqa/automation/tasks/SelectGender.java
+ com.demoqa.automation.tasks.SelectGender
+com/demoqa/automation/questions/ExistingElementQuestion.java
+ com.demoqa.automation.questions.ExistingElementQuestion
+com/demoqa/automation/ui/PracticeFormPage.java
+ com.demoqa.automation.ui.PracticeFormPage
+com/demoqa/automation/tasks/FillForm.java
+ com.demoqa.automation.tasks.FillForm
+com/demoqa/automation/utils/Excel.java
+ com.demoqa.automation.utils.Excel
+com/demoqa/automation/tasks/HomePage.java
+ com.demoqa.automation.tasks.HomePage
+com/demoqa/automation/tasks/HomePageValidation.java
+ com.demoqa.automation.tasks.HomePageValidation
+com/demoqa/automation/ui/ValidacionPage.java
+ com.demoqa.automation.ui.ValidacionPage
+com/demoqa/automation/models/DataInjection.java
+ com.demoqa.automation.models.DataInjection
+com/demoqa/automation/ui/LoginPage.java
+ com.demoqa.automation.ui.LoginPage
+com/demoqa/automation/interactions/OpenFile.java
+ com.demoqa.automation.interactions.OpenFile
+com/demoqa/automation/tasks/ValidacionResultado.java
+ com.demoqa.automation.tasks.ValidacionResultado
+com/demoqa/automation/questions/Validations.java
+ com.demoqa.automation.questions.Validations
