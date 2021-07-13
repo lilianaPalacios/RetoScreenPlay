@@ -4,10 +4,8 @@ import com.demoqa.automation.ui.PracticeFormPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
-import net.serenitybdd.screenplay.targets.Target;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static org.openqa.selenium.By.xpath;
 
 public class SelectGender implements Task {
 
@@ -21,13 +19,13 @@ public class SelectGender implements Task {
     public <T extends Actor> void performAs(T actor) {
         switch (gender){
             case "Male":
-                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.genderRadioButton.of("1")));
+                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.GENDERRADIOBBUTON.of("1")));
                 break;
             case "Female":
-                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.genderRadioButton.of("2")));
+                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.GENDERRADIOBBUTON.of("2")));
                 break;
             case "Other":
-                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.genderRadioButton.of("3")));
+                actor.attemptsTo(JavaScriptClick.on(PracticeFormPage.GENDERRADIOBBUTON.of("3")));
                 break;
         }
     }

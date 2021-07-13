@@ -6,21 +6,14 @@ import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.ui.PracticeFormPage;
 import com.demoqa.automation.utils.CompletePracticeForm;
 import com.demoqa.automation.utils.Excel;
-import cucumber.api.java.et.Ja;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.ClickOnTarget;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
 import net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget;
-import net.serenitybdd.screenplay.waits.Wait;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.KeyInput;
-
-import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.nio.file.Watchable;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.*;
@@ -35,29 +28,29 @@ public class FillForm  implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                WaitUntil.the(PracticeFormPage.practiceFormLink,isVisible()),
-                JavaScriptClick.on(PracticeFormPage.practiceFormLink),
-                WaitUntil.the(PracticeFormPage.lasNameImput,isVisible()),
+                WaitUntil.the(PracticeFormPage.PRACTICEFORMLINK,isVisible()),
+                JavaScriptClick.on(PracticeFormPage.PRACTICEFORMLINK),
+                WaitUntil.the(PracticeFormPage.LASTNAMEINPUT,isVisible()),
                 Enter.theValue(
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,0)).
-                        into(PracticeFormPage.nameInput),
+                        into(PracticeFormPage.NAMEINPUT),
 
                 Enter.theValue(
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,1)).
-                        into(PracticeFormPage.lasNameImput),
+                        into(PracticeFormPage.LASTNAMEINPUT),
                 Enter.theValue(
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,2)).
-                        into(PracticeFormPage.email),
+                        into(PracticeFormPage.EMAILINPUT),
                 SelectGender.selGend(Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,3)),
                 Enter.theValue(
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,4)).
-                        into(PracticeFormPage.mobileInput),
-                JavaScriptClick.on(PracticeFormPage.dateBirthClick),
-                WaitUntil.the(PracticeFormPage.monthCombo,isVisible()),
-                new SelectByVisibleTextFromTarget(PracticeFormPage.monthCombo,
+                        into(PracticeFormPage.MOBILEINPUT),
+                JavaScriptClick.on(PracticeFormPage.DATEBITRHCLICK),
+                WaitUntil.the(PracticeFormPage.MONTHCOMBO,isVisible()),
+                new SelectByVisibleTextFromTarget(PracticeFormPage.MONTHCOMBO,
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,6)),
-                WaitUntil.the(PracticeFormPage.yearCombo,isVisible()),
-                new SelectByVisibleTextFromTarget(PracticeFormPage.yearCombo,
+                WaitUntil.the(PracticeFormPage.YEARCOMBO,isVisible()),
+                new SelectByVisibleTextFromTarget(PracticeFormPage.YEARCOMBO,
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,7)),
                 JavaScriptClick.on(completePracticeForm.daySelected(
                         Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,5),
@@ -72,12 +65,12 @@ public class FillForm  implements Task {
                 OpenFile.OpF(Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,10),
                              Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,11)),
                 Enter.theValue(Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,12)).
-                        into(PracticeFormPage.currentAddres),
-                new ClickOnTarget(PracticeFormPage.stateCityComboClick),
+                        into(PracticeFormPage.CURRENT_ADDRESS),
+                new ClickOnTarget(PracticeFormPage.STATE_CITY_COMBO_CLICK),
                 SelectOpcCityState.SelOpcCityState(Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,13)),
-                new ClickOnTarget(PracticeFormPage.ciyCombo),
+                new ClickOnTarget(PracticeFormPage.CIY_COMBO),
                 SelectOpcCityState.SelOpcCityState(Excel.getCellValue(dataInjection.getFilePath(),dataInjection.getSheetNameData(),1,14)),
-                JavaScriptClick.on(PracticeFormPage.submitBtn)
+                JavaScriptClick.on(PracticeFormPage.SUBMIT_BTN)
         );
     }
 

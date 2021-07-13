@@ -2,9 +2,7 @@ package com.demoqa.automation.tasks;
 
 import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.questions.Validations;
-import com.demoqa.automation.ui.PracticeFormPage;
 import com.demoqa.automation.ui.ValidacionPage;
-import com.demoqa.automation.utils.CompletePracticeForm;
 import com.demoqa.automation.utils.Excel;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -49,8 +47,8 @@ public class ValidacionResultado implements Task {
                 j++;
             }
 
-            System.out.println("target" + Text.of(ValidacionPage.campoTablaTbl.of(i+"")).viewedBy(actor).value() + "excel " + datoExcel);
-            actor.should(seeThat(Validations.val((Text.of(ValidacionPage.campoTablaTbl.of(i+"")).viewedBy(actor).value()),datoExcel)));
+            System.out.println("target" + Text.of(ValidacionPage.CAMPOTABLATBL.of(i+"")).viewedBy(actor).value() + "excel " + datoExcel);
+            actor.should(seeThat(Validations.val((Text.of(ValidacionPage.CAMPOTABLATBL.of(i+"")).viewedBy(actor).value()),datoExcel)));
 
            // Validar(resultadoPage.getCampoTablaTbl(i),datoExcel);
         }

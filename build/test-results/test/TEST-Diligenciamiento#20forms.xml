@@ -1,54 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Diligenciamiento forms" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-08T23:02:14" hostname="DESKTOP-CT3K1HU" time="37.611">
+<testsuite name="Diligenciamiento forms" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-13T13:46:47" hostname="DESKTOP-CT3K1HU" time="63.53">
   <properties/>
-  <testcase name="Acceso al formulario" classname="Diligenciamiento forms" time="37.611">
-    <failure message="java.lang.AssertionError: Expected validations&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Expected validations
-Expected: is &lt;true&gt;
-     but: was &lt;false&gt;
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
-	at com.demoqa.automation.tasks.ValidacionResultado.performAs(ValidacionResultado.java:53)
-	at com.demoqa.automation.tasks.ValidacionResultado$$EnhancerByCGLIB$$b2e951f8.CGLIB$performAs$0(&lt;generated&gt;)
-	at com.demoqa.automation.tasks.ValidacionResultado$$EnhancerByCGLIB$$b2e951f8$$FastClassByCGLIB$$4356aa3c.invoke(&lt;generated&gt;)
-	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
-	at com.demoqa.automation.tasks.ValidacionResultado$$EnhancerByCGLIB$$b2e951f8.performAs(&lt;generated&gt;)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
-	at com.demoqa.automation.test.stepdefinitions.HomePageStepdefinitions.validaLosCampos(HomePageStepdefinitions.java:56)
-	at ✽.Valida los campos(src/test/resources/features/registroForms.feature:15)
-</failure>
-  </testcase>
+  <testcase name="Acceso al formulario" classname="Diligenciamiento forms" time="63.53"/>
   <system-out><![CDATA[targetPedro Perexexcel Pedro Perex
+targetasd@gmail.comexcel asd@gmail.com
+targetFemaleexcel Female
+target3125885469excel 3125885469
+target28 April,1998excel 28 April,1998
+targetEnglishexcel English
+targetMusicexcel Music
+targetimagen.jpgexcel imagen.jpg
+targetcurrent 12 12excel current 12 12
+targetRajasthan Jaiselmerexcel Rajasthan Jaiselmer
 ]]></system-out>
-  <system-err><![CDATA[jul 08, 2021 6:02:14 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[jul 13, 2021 8:46:47 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disable-popup-blocking,--..., goog:chromeOptions: {args: [--disable-popup-blocking, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --disable-dev-shm-usage], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 3772
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 45781
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-jul 08, 2021 6:02:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+jul 13, 2021 8:46:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED: Acceso al formulario
---------------------------------------------------------------------------
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then validations
-[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected validationsExpected: is <true> but: was <false>
+TEST PASSED: Acceso al formulario
+----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
